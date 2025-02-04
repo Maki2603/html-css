@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-sefif;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -20,7 +24,6 @@ header {
 }
 
 header > h1 {
-    font-family: "Passion one", serif;
     font-weight: light;
     font-size: 5em;
     padding-top: 50px;
