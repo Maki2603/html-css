@@ -1,0 +1,302 @@
+Tags e Comandos
+Estrutura e Comentários
+    • ! = Estrutura padrão do HTML.
+    • <!-- --> = Comentário.
+    • &lt; = Símbolo <.
+    • &gt; = Símbolo >.
+    • <main> = Indica o conteúdo principal de uma página/aplicação.
+
+Títulos e Textos
+    • <title> = Título do site.
+    • <h1> ... <h6> = Títulos hierárquicos.
+    • <p> = Parágrafo.
+    • <hr> = Linha horizontal.
+    • <br> = Quebra de linha.
+    • <span> = Uso genérico para aplicar classes.
+
+Formatos de Texto
+    • <strong> = Negrito.
+    • <em> = Itálico.
+    • <mark> = Marca-texto.
+    • <small> = Texto menor.
+    • <del> = Texto riscado (excluído).
+    • <ins> = Texto sublinhado.
+    • <sup> = Texto Sobrescrito.
+    • <sub> = Texto Subscrito.
+
+Elementos para Código e Citação
+    • <code> = Formatação para código.
+    • <pre> = Mantém formatação e quebras.
+    • <q> = Citação curta.
+    • <blockquote cite=""> = Citação longa.
+
+Abreviações e Direção de Texto
+    • <abbr> = Abreviação.
+    • <bdo dir="ltr"> = Esquerda para direita.
+    • <bdo dir="rtl"> = Direita para esquerda.
+
+Listas
+Ordenada (<ol>)
+    • type="1" = Numérica.
+    • type="a" | type="A" = Letras.
+    • type="i" | type="I" = Algarismos romanos.
+    • start="4" = Define o número inicial.
+Não ordenada (<ul>)
+    • <li> = Item da lista.
+Lista de Definição (<dl>)
+    • <dt> = Termo.
+    • <dd> = Descrição.
+Propriedades CSS
+    • list-style-position: inside; = Bolinhas dentro do grupo.
+    • columns: 2; = Divide em duas colunas.
+    • list-style-type: "\2714"; = Substitui bolinhas por emoji.
+    • \00A0; = Adiciona espaço entre emojis.
+
+Links e Navegação
+    • <a href=""> = Link.
+    • hreflang="pt-br" = Define idioma do link.
+    • rel = Relacionamento
+        ○ rel="next" = Próxima página.
+        ○ rel="prev" = Página anterior.
+    • target="_blank" = Abre nova aba.
+    • target="_self" = Abre na mesma aba.
+    • download = Baixa o arquivo.
+    • ./ = Diretório atual.
+    • ../ = Pasta anterior.
+
+Imagens
+    • <img> = Exibir imagem.
+    • <link rel="icon"> = Favicon.
+Áudio e Vídeo
+Tags
+    • <audio> = Adiciona áudio.
+        ○ Compatibilidade: MP3, WAV, OGG.
+    • <video> = Adiciona vídeo.
+Atributos
+    • controls = Exibir controles.
+    • autoplay = Reprodução automática.
+    • loop = Reprodução em loop.
+    • poster="imagem.jpg" = Thumbnail.
+    • src="arquivo.mp4" = Fonte.
+    • <source> = Melhor compatibilidade.
+
+Grouping Tags
+    • <header> = Cabeçalho.
+    • <main> = Conteúdo principal.
+    • <footer> = Rodapé.
+    • <section> = Seção.
+    • <article> = Artigo.
+        ○ <aside> = Conteúdo relativo.
+    • <div> = Container genérico.
+    • <nav> = Navegação ( menu ).
+    • > =  Referece oq a dentro da groupin tag
+
+Comandos no Editor
+    • Ctrl + Space = Listar arquivos.
+    • Ctrl + Shift + P = Atalhos rápidos.
+    • Shift + Tab = Recuo reverso.
+    • Tab = Avançar recuo.
+    • Alt + Clique = Seleção múltipla.
+    • Ctrl + Q = Abrir menu lateral.
+    • Ctrl + Clique em link = Criar arquivo inexistente.
+
+Responsividade
+    • min-width: = Largura mínima.
+    • max-width: = Largura máxima.
+    • width: 100%; = Ajusta tamanho.
+Exemplo de Responsividade com <picture>
+
+<picture>
+  <source media="(max-width: 600px)" srcset="imagem-pequena.jpg">
+  <img src="imagem-grande.jpg" alt="Imagem Responsiva">
+</picture>
+
+Exemplo com Vídeo
+
+div.video {
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+CSS
+Propriedades Básicas
+    • /* */ = Abrir  um comentário no CSS
+    • width: = Largura.
+    • height: = Altura.
+    • font-weight: = Peso da fonte 
+        ○ (100-900).
+        ○ lighter, normal, bold, bolder
+    • text-shadow = Mesma coisa de box-shadow
+    • font-style: = italic ou normal.
+    • background-color: = Cor de fundo.
+    • color: = Cor do texto.
+    • text-align: = Alinhamento do texto.
+    • font-family: = Tipo de fonte.
+    • font-size: = Tamanho da fonte.
+    • font-variant : variação da fonte
+        ○ :smal-caps = Deixa as iniciais maiusculas
+    • text-decoration: underline; = Sublinhado.
+    • background-image: linear-gradient(); = Gradiente.
+    • background-image: radial-gradient(circle) = Gradiente radial
+    • bakcground-image: url() = Imagem de fundo
+        ○ background-size = ajusta o tamanho da imagem
+            § :auto = ele deixa automatico num tamanho especifico
+            § :contain = A imagem vai sempre estar 100% exibida
+            § :cover = Cobrir a tela inteira
+        ○ background-repeat: repeat = vai repetir a imagem pela tela inteira
+        ○ background-repeat: no-repeat = Não vai repetir
+        ○ background-repeat: repeat-x = Repetir no eixo x horizontalmente
+        ○ background-repeat: repeat-yt = Repetir no eixo y verticalmente
+        ○ background-attachment = Vinculo
+            § :scroll = Quando rolar a imagem scrola junto
+            § :fixed = Imagem fica na tela inteira independente se rola ou nao
+        ○ background-position: left bottom = definir onde ficara a imagem
+        
+    • background-attachment: fixed = Deixa a tela inteira com aquele background (efeito paralax)
+    • text-indent: Espaçamento no inicio do paragrafo
+    • display: none; = Esconder elemento.
+    • text-decoration none = Some todas as decorações principalmente de links as linhas por exemplo
+    • text-decoration underline = deixa uma linha embaixo daquilo
+
+
+Estilos CSS
+Estilo Inline
+Dentro de tags
+<h1 style="color: black">Título</h1>
+Estilo Interno
+Dentro do head
+<style>
+  h1 { color: red; }
+</style>
+Estilo Externo
+Arquivo fora
+<link rel="stylesheet" href="style.css">
+
+Unidades de Medida
+    • Absolutas:
+        ○ px = Pixels.
+        ○ cm = centimetro
+        ○ mm = milimetro
+        ○ in = Polegada
+        ○ pt = ponto
+        ○ pc = paica
+    • Relativas:
+        ○ em = Medida relativa ao tamanho atual da fonte
+        ○ ex = Relativa a altura x
+        ○ rem = Relativa a fonte que esta configurada no body
+        ○ vw = view width porcentagem da largura da view port
+        ○ vh = view height porcentagem da altura da view port
+        ○ % = porcentagem
+    • Ângulos: deg (graus)
+
+Seletores Personalizados
+    • id = Cria um id para aquela tag para se diferenciar das outras 
+        ○ Aplicação no CSS
+        ○ h1#principal {} ou #principal {}
+    ○ class = Classe da tag que é representada no CSS por meio do . 
+        ○ .principal {}
+
+Pseudo-classes
+    • :hover = Quando o mouse passa.
+    • a:visited = Quando já foi visitado.
+    • a:active = Quando clicado.
+    • :root = Define variáveis globais.
+
+        :root {
+  --cor-principal: black;
+  --fonte-destaque: Arial;
+}
+
+Pseudo-elementos
+    • a::after { content: ""; } = Adiciona conteúdo após o link.
+    • a::before { content: ""; } = Adiciona antes do link.
+
+Boxes
+    • padding: = Espaço interno.
+    • outline = contorno/traçado
+    • margin: = Margem externa.
+        ○ margin: auto = Deixa a margem sempre no meio 
+    
+    • border-radius: = Bordas arredondadas.
+    • box-shadow: = Sombra.
+        ○ :inset = sombra para dentro
+    • border-width = Largura da borda/ espessura
+    • border-style:  
+        ○ solid = Borda solida completa
+        ○ dashed = Trasilhado
+        ○ dotted = Pontilhado
+        ○ double = linha dupla
+        ○ groove = 3D
+        
+    • display: block; = Transforma em box-level.
+    • display inline-block = Transforma um box level em um inline level
+    • border-color = Cor da borda
+    • border image source ( precisa de uma borda ja) = pegar uma borda de uma imagem
+    • border image slice = cortar a borda 
+    • border image repeat = repetir a borda varias vezes 
+    • transition-duration: = Define tempo de transição.
+    • position relative = Posição relativa costuma ser essa opção geralmente
+    • position absolute = Posição absoluta permite a alteração de topo e esquerda
+        ○ top : 10px
+        ○ left : 10px
+    • transform: translate(20px(para direita), 20px(parabaixo))
+                    
+
+Regras CSS
+    • @ = Define uma regra CSS.
+    • @font-face = Importar fontes.
+
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('fonte.woff') format('woff');
+}
+            § Tipos de format()
+            § opentype (otf)
+            § truetype (ttp)
+            § embedded-opentype
+            § truetype-aat (Aple Advance typography)
+            § svg
+    
+    • * { margin: 0; padding: 0; } = Reset global.
+
+Shorthand CSS
+    • font
+        ○ font-style, font-weight, font-size, font-family
+        ○ Ex: font: italic bolder 3em 'Work Sans', sans-serif;
+        
+    • border = borda
+        ○ border: 1px(largura) solid(tipo) black(cor)
+        
+    • padding e margin =
+        ○ padding: 1px(top) 1px(right) 1px(bottom) 1px(left)
+        ○ E se as 4 padding forem iguais so fazer padding: 1px
+        ○ E se for 2 valores padding: 10px 20px o de cima e de baixo vai ser 10px e o da direita e esquerda fica 20px
+        ○ margin: 20px auto 40px auto: o da direita e esquerda ficam centralizados
+        
+    • outline: 5px(tamanho) dashed(tipo) red(cor)
+    
+    • border-image: url() 27(slice) repeat(tipo)
+    
+    • border-radius: 10px(em cima na esquerda) 10px(em cima na direita) 10px(em baixo na esquerda) 10px(em baixo na direita)
+    
+    • box-shadow 10px (pro lado) 10px(pra baixo) 10px(transparencia) black = sombra
+
+    • background: (color) (image) (position) (repeat) [size (size n funciona)	] (attachment)
+
+Cores
+    • rgb(0, 0, 0) = Preto.
+    • hsl(0, 100%, 50%) = matiz saturação luminozidade
+
+Outros
+    • &#x = Emojis (ex: &#x1F600; = 😀).
+    • Sugestão: Verifique tags obsoletas no W3C.
+
+Wireframe
+mockflow
