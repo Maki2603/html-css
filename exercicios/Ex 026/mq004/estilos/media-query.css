@@ -14,9 +14,6 @@ Grande telas: acima de 1200px
     * {
         font-family: 'Courier New', Courier, monospace;
     }
-    body {
-        
-    }
     main {
         border: 2px solid black;
     }
